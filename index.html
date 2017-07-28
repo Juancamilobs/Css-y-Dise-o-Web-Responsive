@@ -2,42 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,user-scalable=yes">
     <link rel="stylesheet" href="CSS/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <title>Comenzando la Fotografía</title>
   </head>
   <body>
-
-    <div role=main class="cabecera" >
+  <div id="contenido">
+    <div class="cabecera">
+      <div class="titulo" id="titulo">
       <h1>Comenzando la Fotografía</h1>
-      <div id="menu">
+      </div>
+      <div class="menu" id="menu">
         <nav>
-          <a href="PaginasSecundarias/retratos.html" target="_blank"> Retratos </a>
-          <a href="PaginasSecundarias/paisajes.html" target="_blank"> Paisajes </a>
-          <a href="#cabecera"> Inicio</a>
+          <a href="#titulo" style="text-decoration:none">Inicio</a>
+          <a href="PaginasSecundarias/paisajes.html" target="_blank">Paisajes</a>
+          <a href="PaginasSecundarias/retratos.html" target="_blank">Retratos</a>
         </nav>
       </div>
     </div>
-    <div class="ip">
-      <picture;>
-        <source media="(min-device-width:900px)" srcset="images/principal(w1200).png" >
-        <source media="(min-device-width:700px)" srcset="images/principal(w800).png" >
-        <source media="(min-device-width:400px)" srcset="images/principal(w400).png" >
-        <img src="images/principal(w800).png" alt="Imagen principal">
-      </picture>
+    <div class="imagenprincipal">
+      <img src="images/Imagen_Principal(w900).jpg" alt="Camara Fotografica">
     </div>
-    <div id="imagensecundaria">
-      <div class="isc1">
-        <picture;>
-          <source media="(min-device-width:900px)" srcset="images/secundariader(w1600).png" >
-          <source media="(min-device-width:700px)" srcset="images/secundariader(w700).png" >
-          <source media="(min-device-width:400px)" srcset="images/secundariader(w400).png" >
-          <img src="images/secundariader(w400).png" alt="Imagen principal">
-        </picture>
+    <div class="imagensecundaria">
+      <div class="isi" id="izquierda">
+        <a href="PaginasSecundarias/paisajes.html" target="_blank">
+        <img src="images/Paisajes(w900).jpg" alt="Paisajes">
+        </a>
+        <p style="text-decoration:underline">Paisajes</p>
       </div>
-      <div class="isc2">
-
+      <div class="isd" id="derecha">
+        <a href="PaginasSecundarias/retratos.html" target="_blank">
+        <img src="images/Retratos(w900).jpg" alt="Retratos">
+        </a>
+        <p style="text-decoration:underline">Retratos</p>
       </div>
     </div>
   </body>

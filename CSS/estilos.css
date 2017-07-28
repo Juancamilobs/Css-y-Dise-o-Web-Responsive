@@ -1,63 +1,186 @@
 body{
   font-family:'Dancing Script';
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-decoration: none;
   background: #02010a;
   }
-.cabecera {
-  width: 100%;
-  height: auto;
+img{
+  box-shadow: 2px 2px #02010a;
+  }
+#contenido{
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 900px){
+  #contenido{
+    width: 100%;
+  }
+  .cabecera{
+    background-color: #5b7989;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+  }
+  .cabecera h1{
+      color: white;
+      text-shadow: #02010a 2px 2px;
+      font-size: 1.6em;
+      padding-bottom: 0;
+      text-align: center;
+
+  }
+  .menu{
+      color: white;
+      text-align: center;
+  }
+  .menu a{
+    color: white;
+    font-size: 1.0em;
+  }
+  .menu a:visited{
+    color:white;
+    text-decoration: none;
+    }
+  .imagenprincipal{
+    text-align: center;
+    background-color: #82c3a6;
+    padding: 1.1em;
+
+    }
+  .imagenprincipal img{
+      width: 80%;
+    }
+  .imagensecundaria{
+    background-color: #d5c75f;
+
+    text-align: center;
+    }
+  .imagensecundaria .isi{
+    padding-top: 1.1em;
+  }
+  .imagensecundaria .isd{
+    padding-top: 1.1em;
+  }
+.imagensecundaria .isi img:hover{
+  transform: rotate(10deg);
+  transition-duration: 2s;
+  filter:drop-shadow(15px 20px 25px #82c3a6);
+  border: 2px;
+  }
+.imagensecundaria .isi p{
+  margin-top: 0;
+  }
+.imagensecundaria .isi img{
+  width: 80%;
+  }
+
+.imagensecundaria .isd img{
+  width: 80%;
+  }
+.imagensecundaria .isd p{
+    margin-top: 0;
+  }
+.imagensecundaria .isd img:hover{
+  transform: translate(20px,-5px);
+  transition-duration: 2s;
+  filter:drop-shadow(15px 20px 25px #82c3a6);
+  border: 2px;
+  }
+div #izquierda{
+  width:100%;
+  }
+div #derecha{
+  width:100%;
+}
+}
+
+@media (min-width:900px) {
+  #contenido{
+    max-width: 900px;
+  }
+.cabecera{
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
-
-}
-.cabecera h1{
-  padding-left: 0.2em;
-  padding-bottom: 0.3em;
-  line-height: 1.4em;
-  color: white;
-  text-shadow: 2px 2px #02010a;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  }
+div #titulo{
+  width: 50%;
   text-align: left;
-}
-#menu nav{
-  text-align: right;
-}
-.cabecera a{
-  text-decoration: none;
-  text-align: right;
-  border-bottom: 10px;
 
 }
-.cabecera a::before{
-  content: '|'
+div #menu{
+  width: 50%;
+  text-align: right;
+  padding-top:2.0em;
+  padding-right: 0.5em;
 }
-.cabecera a:visited{
-  color: #0101DF;
+.titulo h1{
+    color: white;
+    text-shadow: #02010a 2px 2px;
+    padding-left: 0.5em;
+  }
+.menu{
+    color: white;
 }
- .ip{
+.menu a{
+  color: white;
+  font-size: 1.4em;
+  word-spacing: 1.0em;
+
+}
+.menu a:visited{
+  color:white;
+  text-decoration: none;
+  }
+.imagenprincipal{
   text-align: center;
   background-color: #82c3a6;
-  height: auto;
-}
- .ip img{
-  width: 80%;
-  padding-bottom: 0;
-}
+  padding: 1.1em;
 
-#imagensecundaria{
+  }
+.imagenprincipal img{
+    width: 80%;
+  }
+.imagensecundaria{
   background-color: #d5c75f;
-  
-  height: auto;
-}
 
+  text-align: center;
+  display: flex;
+  }
+.imagensecundaria .isi{
+  padding-top: 1.1em;
 }
-@media (min-width:900px) {
-
+.imagensecundaria .isd{
+  padding-top: 1.1em;
 }
-@media (max-width:900px) {
-
+.imagensecundaria .isi img{
+  width: 80%;
+  }
+.imagensecundaria .isi img:hover{
+  transform: rotate(10deg);
+  transition-duration: 2s;
+  filter:drop-shadow(15px 20px 25px #82c3a6);
+  border: 2px;
+  }
+.imagensecundaria .isi p{
+  margin-top: 0;
+  }
+.imagensecundaria .isd img{
+  width: 80%;
+  }
+.imagensecundaria .isd p{
+    margin-top: 0;
+  }
+.imagensecundaria .isd img:hover{
+  transform: translate(20px,-5px);
+  transition-duration: 2s;
+  filter:drop-shadow(15px 20px 25px #82c3a6);
+  border: 2px;
+  }
+div #izquierda{
+  width:50%;
+  }
+div #derecha{
+  width:50%;
 }
-div{
-
 }
