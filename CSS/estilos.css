@@ -7,12 +7,38 @@ body{
 img{
   box-shadow: 2px 2px #02010a;
   }
-#contenido{
+
+.contenido{
   margin-left: auto;
   margin-right: auto;
+  animation: slidein 1s;
 }
+#ig1{
+  -webkit-filter:blur(10px);
+  filter: blur(10px);
+}
+#ig2,#ig4,#ig6{
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+#ig3{
+  -webkit-filter:sepia(90%);
+  filter: sepia(90%);
+}
+@-webkit-keyframes slidein {
+  0%{
+    margin-top: 150%
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
 @media (max-width: 900px){
-  #contenido{
+  .contenido{
     width: 100%;
   }
   .cabecera{
@@ -99,28 +125,30 @@ img{
     text-align: left;
     display: block;
   }
-  div #contacto{
-    width: 100%;
-    padding: 0.5em;
-  }
   .finfo h2{
     margin-top: 0;
   }
-  div #terminos{
+  .finfo{
     width: 100%;
     padding: 0.5em;
-  }
-  div #derechos{
-    width: 100%;
-    padding: 0.5em;
-  }
-  div #redes{
-    width: 100%;
-    padding: 0.5em;
+    text-align: center;
   }
   div #redes img{
     width: 8%;
     box-shadow: 0 0 0 0;
+  }
+  .galeria{
+    width: auto;
+    padding: 1.1em;
+    background-color: #d5c75f;
+  }
+  .igaleria{
+    width:auto;
+    text-align: center;
+    padding: 1.3em;
+  }
+  .igaleria img{
+    width: 60%;
   }
 
 }
@@ -222,21 +250,29 @@ img{
     display: flex;
     text-align: center;
     }
-  div #contacto{
-    width: 25%;
-  }
-  div #terminos{
-    width: 25%;
-  }
-  div #redes{
+  div .finfo{
     width: 25%;
   }
   div #redes img{
     width: 13%;
     box-shadow: 0 0 0 0;
   }
-  div #derechos{
-    width: 25%;
+  .galeria{
+      width: 100%;
+      background-color: #d5c75f;
+      text-align: center;
   }
-
+  .bloqueimagenes{
+    max-width: 900px;
+    text-align: center;
+    display: flex;
+    padding: 1.3em;
+  }
+  .igaleria{
+    width: 33%;
+    text-align: center;
+  }
+  .igaleria img{
+    width: 60%;
+  }
 }
